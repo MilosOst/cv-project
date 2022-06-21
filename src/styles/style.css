@@ -9,6 +9,8 @@
     --light-blue: #e2ebf8;
     --sidebar-blue: #c1dcf0;
     --grey: #6c6a6a;
+    --form-bg: #91d9bb;
+    --grey-btn: #e5e3e3;
 }
 
 html, body, #root, .App {
@@ -120,3 +122,73 @@ html, body, #root, .App {
     font-size: 0.8rem;
 }
 
+.profile-section {
+    position: relative;
+}
+
+.edit-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    padding: 8px 24px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--sidebar-blue);
+}
+
+.close-btn {
+    align-self: center;
+    padding: 6px 18px;
+    border-radius: 6px;
+    background-color: var(--grey-btn);
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn:hover {
+    filter: brightness(95%);
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 1rem;
+    background-color: var(--sidebar-blue);
+}
+
+.form-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+input, textarea {
+    font-size: 0.8rem;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: 300;
+}
