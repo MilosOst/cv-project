@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --light-blue: #e2ebf8;
+    --sidebar-blue: #c1dcf0;
+    --grey: #6c6a6a;
+}
+
+html, body, #root, .App {
+    height: 100%;
+}
+
+#root {
+    padding: 3rem;
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.5;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+}
+
+.profile-pic {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--sidebar-blue);
+}
+
+.header-title {
+    flex: 4;
+    padding: 3rem 0;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: var(--light-blue);
+    color: gray;
+}
+
+.name {
+    font-size: 2.4rem;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    flex: 1;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: var(--sidebar-blue);
+}
+
+.main-wrapper {
+    flex: 4;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-content p {
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.position-title {
+    font-size: 1rem;
+}
+
+.company-info {
+    font-size: 0.8rem;
+}
+
