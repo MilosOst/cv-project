@@ -11,6 +11,7 @@
     --grey: #6c6a6a;
     --form-bg: #91d9bb;
     --grey-btn: #e5e3e3;
+    --green: #5bb790;
 }
 
 html, body, #root, .App {
@@ -84,6 +85,10 @@ html, body, #root, .App {
     padding: 2rem;
 }
 
+.sidebar-section {
+    position: relative;
+}
+
 .section-title {
     font-size: 1.3rem;
     letter-spacing: 2px;
@@ -135,7 +140,7 @@ html, body, #root, .App {
     border-radius: 2px;
     border: none;
     cursor: pointer;
-    background-color: var(--sidebar-blue);
+    background-color: var(--green);
 }
 
 .close-btn {
@@ -154,24 +159,18 @@ html, body, #root, .App {
     filter: brightness(95%);
 }
 
-.active {
-    display: block;
-}
-
-.inactive {
-    display: none;
-}
-
 .edit-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+
     position: absolute;
     top: 5px;
     right: 5px;
     padding: 1rem;
-    background-color: var(--sidebar-blue);
+    z-index: 2;
+    background-color: var(--form-bg);
 }
 
 .form-entry {
@@ -191,4 +190,6 @@ input, textarea {
 .form-label {
     font-size: 1rem;
     font-weight: 300;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
 }
