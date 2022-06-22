@@ -33,12 +33,20 @@ html, body, #root, .App {
 
 .header {
     display: flex;
+    position: relative;
 }
 
 .profile-pic {
     flex: 1;
     padding: 1rem;
     background-color: var(--sidebar-blue);
+    text-align: center;
+}
+
+.profile-pic > img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .header-title {
@@ -52,10 +60,12 @@ html, body, #root, .App {
 
 .name {
     font-size: 2.4rem;
+    text-transform: uppercase;
 }
 
 .title {
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .content {
@@ -93,6 +103,7 @@ html, body, #root, .App {
     font-size: 1.3rem;
     letter-spacing: 2px;
     margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 .section-info {
