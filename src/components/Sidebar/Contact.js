@@ -63,7 +63,7 @@ class Contact extends Component {
         const { address, email, phoneNum, site, hover, edit } = this.state;
 
         return (
-            <div className="sidebar-section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
+            <div className="section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
                 <h4 className="section-title">CONTACT</h4>
                 <ul className="section-info">
                     <li className="contact-item">

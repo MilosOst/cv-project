@@ -37,7 +37,7 @@ class Profile extends Component {
         const {description, hover, edit} = this.state;
 
         return (
-            <div className="profile-section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
+            <div className="section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
                 <h4 className="section-title">PROFILE</h4>
                 <p>{description ? description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat inventore accusamus autem amet. Quibusdam sed veniam provident doloremque soluta nisi itaque pariatur non vitae sint. Quae ea dolores facilis."}</p>
                 

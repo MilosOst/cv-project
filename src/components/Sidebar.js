@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Contact from "./SIdebar/Contact.js";
-import Education from "./SIdebar/Education.js";
-import Skills from "./SIdebar/Skills.js";
+import Contact from "./Sidebar/Contact.js";
+import Education from "./Sidebar/Education.js";
+import Skills from "./Sidebar/Skills.js";
 
 class Sidebar extends Component {
     constructor(props) {

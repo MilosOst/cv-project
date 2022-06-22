@@ -65,12 +65,12 @@ class Skills extends Component {
         const { skills, currSkill, hover, edit } = this.state;
 
         return (
-            <div className="sidebar-section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
+            <div className="section" onMouseOver={this.handleMouseIn} onMouseOut={this.handleMouseOut}>
                 <h4 className="section-title">SKILLS</h4>
                 <ul className="section-info">
                     {skills.map((skill) => {
                         return <li key={skill.id}
-                        className="removable-skill"
+                        className="removable"
                         onClick={() => this.removeSkill(skill.id)}
                         >{skill.name}</li>
                     })}
