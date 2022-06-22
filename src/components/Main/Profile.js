@@ -41,7 +41,7 @@ class Profile extends Component {
                 <h4 className="section-title">PROFILE</h4>
                 <p>{description ? description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat inventore accusamus autem amet. Quibusdam sed veniam provident doloremque soluta nisi itaque pariatur non vitae sint. Quae ea dolores facilis."}</p>
                 
-                {hover && <button className="edit-btn" onClick={this.toggleForm}>EDIT</button>}
+                {hover && <button className="btn" onClick={this.toggleForm}>EDIT</button>}
                 {edit &&
                 <form action="" className="edit-form">
                     <div className="form-entry">

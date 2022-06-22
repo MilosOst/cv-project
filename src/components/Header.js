@@ -60,7 +60,7 @@ class Header extends Component {
                     <h1 className="name">{name ? name : "YOUR NAME"}</h1>
                     <h4 className="title">{title ? title: "YOUR TITLE"}</h4>
                 </div>
-                {hover && <button className="edit-btn" onClick={this.toggleForm}>EDIT</button>}
+                {hover && <button className="btn" onClick={this.toggleForm}>EDIT</button>}
 
                 { edit && 
                     <form action="" className="edit-form">

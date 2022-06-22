@@ -83,7 +83,7 @@ class Contact extends Component {
                         <p>{site ? site : "www.yoursite.com"}</p>
                     </li>
                 </ul>
-                {hover && <button className="edit-btn" onClick={this.toggleForm}>EDIT</button>}
+                {hover && <button className="btn" onClick={this.toggleForm}>EDIT</button>}
                 {edit && 
                     <form action="" className="edit-form">
                         <div className="form-entry">
