@@ -122,6 +122,11 @@ html, body, #root, .App {
     gap: 1.5rem;
 }
 
+.contact-item > p {
+    inline-size: max-content;
+    overflow-wrap: anywhere;
+}
+
 .main-content p {
     font-size: 0.9rem;
     color: var(--grey);
